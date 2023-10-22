@@ -226,7 +226,7 @@ ggplot(daily_steps, aes(x=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_figures/Average%20Steps%20at%205-Min%20Intervals.png)<!-- -->
+![](PA1_template_figures/Histogram%20of%20Daily%20Steps%20with%20Imputed%20Data.png)<!-- -->
 
 ``` r
 # Calculate and display mean and median
