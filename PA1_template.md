@@ -70,7 +70,7 @@ ggplot(daily_steps, aes(x=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_files/figure-gfm/histogram%20steps%20per%20day-1.png)<!-- -->
+![](PA1_template_figures/histogram%20steps%20per%20day.png)<!-- -->
 
 Next, we need to calculate and report the mean and median of the total
 number of steps taken per day
@@ -140,7 +140,7 @@ ggplot(interval_means, aes(x=interval, y=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_figures/histogram steps per day.png)<!-- -->
+![](PA1_template_figures/histogram%20steps%20per%20day.png)<!-- -->
 
 Next we need to calculate which 5-minute interval, on average across all
 the days in the dataset, contains the maximum number of steps.
@@ -226,7 +226,7 @@ ggplot(daily_steps, aes(x=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_figures/Average Steps at 5-Min Intervals.png)<!-- -->
+![](PA1_template_figures/Average%20Steps%20at%205-Min%20Intervals.png)<!-- -->
 
 ``` r
 # Calculate and display mean and median
@@ -274,4 +274,4 @@ p <- ggplot(avg_steps_interval, aes(x=interval, y=steps, group=day_type)) +
 print(p)
 ```
 
-![](PA1_template_figures/Weekday Weekend Average Steps.png)<!-- -->
+![](PA1_template_figures/Weekday%20Weekend%20Average%20Steps.png)<!-- -->
