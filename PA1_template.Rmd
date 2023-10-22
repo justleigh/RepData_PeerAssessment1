@@ -25,6 +25,7 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
 The first step is to read the date and assign it to a variable:
 
 ```{r}
+setwd("/Users/leighpearson/RStudio Practice/Activity Monitoring Project/RepData_PeerAssessment1")
 activity_data <- read.csv("activity.csv")
 ```
 

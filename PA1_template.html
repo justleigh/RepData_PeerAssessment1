@@ -371,7 +371,8 @@ are a total of 17,568 observations in this dataset.</p>
 <div id="data-loading" class="section level2">
 <h2>Data Loading</h2>
 <p>The first step is to read the date and assign it to a variable:</p>
-<pre class="r"><code>activity_data &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
+<pre class="r"><code>setwd(&quot;/Users/leighpearson/RStudio Practice/Activity Monitoring Project/RepData_PeerAssessment1&quot;)
+activity_data &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
 <p>Then we check to see the structure</p>
 <pre class="r"><code>head(activity_data)</code></pre>
 <pre><code>##   steps       date interval

@@ -25,6 +25,7 @@ are a total of 17,568 observations in this dataset.
 The first step is to read the date and assign it to a variable:
 
 ``` r
+setwd("/Users/leighpearson/RStudio Practice/Activity Monitoring Project/RepData_PeerAssessment1")
 activity_data <- read.csv("activity.csv")
 ```
 
@@ -110,7 +111,7 @@ ggplot(daily_steps, aes(x=steps)) +
   guides(color=guide_legend(title=NULL))
 ```
 
-![](PA1_template_files/figure-gfm/histogram%20steps%20per%20day%20+%20mean%20and%20median-1.png)<!-- -->
+![](PA1_template_figures/histogram%20steps%20per%20day%20+%20mean%20and%20median-1.png)<!-- -->
 
 ## Average Daily Activity Pattern
 
@@ -139,7 +140,7 @@ ggplot(interval_means, aes(x=interval, y=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_figures/histogram steps per day.png)<!-- -->
 
 Next we need to calculate which 5-minute interval, on average across all
 the days in the dataset, contains the maximum number of steps.
@@ -225,7 +226,7 @@ ggplot(daily_steps, aes(x=steps)) +
   theme_minimal()
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](PA1_template_figures/Average Steps at 5-Min Intervals.png)<!-- -->
 
 ``` r
 # Calculate and display mean and median
@@ -273,4 +274,4 @@ p <- ggplot(avg_steps_interval, aes(x=interval, y=steps, group=day_type)) +
 print(p)
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_figures/Weekday Weekend Average Steps.png)<!-- -->
